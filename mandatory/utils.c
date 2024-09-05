@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 16:59:05 by qtay              #+#    #+#             */
-/*   Updated: 2024/09/05 13:41:04 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:37:45 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * @param	str represents a specific argv input from the terminal. For instance,
  * 			argv[1] is a string which represents the num of philosophers.
 */
-
 long	ft_atol(char *str)
 {
 	size_t	i;
@@ -51,7 +50,6 @@ long	ft_atol(char *str)
  * 			<sys/time.h>. The timeval structure specifies a time value in seconds
  * 			and microseconds.
 */
-
 long	get_time_ms(void)
 {
 	struct timeval	tv;
@@ -72,7 +70,6 @@ long	get_time_ms(void)
  * 
  * @param	philos each individual philosopher thread
 */
-
 void	print_msg(char *str, t_philo *philos)
 {
 	long	time;
@@ -94,7 +91,6 @@ void	print_msg(char *str, t_philo *philos)
  * 
  * @param	milliseconds desired sleep time in milliseconds
 */
-
 void	sleep_ms(long milliseconds)
 {
 	long	start;

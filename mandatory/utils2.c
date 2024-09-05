@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 16:42:40 by qtay              #+#    #+#             */
-/*   Updated: 2024/07/07 17:10:23 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:37:55 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 /**
  * @brief	Destroys all philosophers' forks
 */
-
 static void	destroy_forks(t_data *data)
 {
 	int	i;
@@ -28,7 +27,6 @@ static void	destroy_forks(t_data *data)
  * @brief	Destroys only the locks (not forks) and free all allocated
  * 			memory
 */
-
 void	destroy_locks_n_free_mem(t_data *data)
 {
 	pthread_mutex_destroy(&data->death_lock);
@@ -41,7 +39,6 @@ void	destroy_locks_n_free_mem(t_data *data)
 /**
  * @brief	Destroys all locks and forks and free all allocated memory
 */
-
 void	destroy_all_n_free_mem(t_data *data)
 {
 	destroy_forks(data);

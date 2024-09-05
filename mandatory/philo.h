@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 16:28:19 by qtay              #+#    #+#             */
-/*   Updated: 2024/07/07 17:30:36 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:37:25 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <pthread.h> // pthread (create, mutex, join, detach)
 # include <sys/time.h> // gettimeofday
 # include <stdlib.h> // malloc, free
-// # include <string.h> // memset
 
 # define INIT_SUCCESS 0
 # define MALLOC_FAILURE 1
@@ -47,7 +46,6 @@ typedef struct s_philo	t_philo;
  * 				   		  printing msg
  * 4. forks				: An array of forks
 */
-
 typedef struct s_data
 {
 	long	start_time;
@@ -72,7 +70,6 @@ typedef struct s_data
  * 9. 	thread_id		: ID of each thread
  * 10.	data			: Pointer to the data struct
 */
-
 typedef struct s_philo
 {
 	long		id;

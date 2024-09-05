@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 18:51:30 by qtay              #+#    #+#             */
-/*   Updated: 2024/09/05 13:52:09 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:45:49 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * @param	philos is the t_philo array which allows the check_death()
  * 			function to have access to all philos easily
 */
-
 static int	check_death(t_philo	*philos)
 {
 	int		i;
@@ -47,6 +46,7 @@ static int	check_death(t_philo	*philos)
 	}
 	return (FALSE);
 }
+
 /**
  * @brief	This is the second helper function. Its function is similar to the
  * 			check_death() function but instead it checks if the number of meals
@@ -56,7 +56,6 @@ static int	check_death(t_philo	*philos)
  * @param	philos is the t_philo array which allows the all_meals_eaten()
  * 			function to have access to all philos easily
 */
-
 static int	all_meals_eaten(t_philo	*philos)
 {
 	int		i;
@@ -92,7 +91,6 @@ static int	all_meals_eaten(t_philo	*philos)
  * @param	arg will be type casted to (t_philo *) which represents the t_philo
  *			array
 */
-
 void	*waiter_routine(void *arg)
 {
 	t_philo	*philos;

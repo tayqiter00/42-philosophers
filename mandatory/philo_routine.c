@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 20:36:52 by qtay              #+#    #+#             */
-/*   Updated: 2024/07/07 17:25:03 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:44:21 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * @brief	Checks if the state of the simulation have been set to FALSE by
  * 			the waiter thread. 
 */
-
 static	int	check_simulation(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->data->death_lock);
@@ -30,11 +29,10 @@ static	int	check_simulation(t_philo *philo)
 }
 
 /**
- *	@brief	Philosophers are synchronized further by forks (mutexes). Once
- 			they pick up two forks, they'll start eating for the specified
-			amount of time and put down their forks.
+ * @brief	Philosophers are synchronized further by forks (mutexes). Once
+ * 			they pick up two forks, they'll start eating for the specified
+ * 			amount of time and put down their forks.
 */
-
 static void	philo_eat(t_philo *philo)
 {
 	if (philo->num_of_philos == 1)
@@ -57,24 +55,23 @@ static void	philo_eat(t_philo *philo)
 	pthread_mutex_unlock(philo->left_fork);
 	pthread_mutex_unlock(philo->right_fork);
 }
-/**
- * @brief	Prints "is sleeping" on the terminal at the specified timestamp.
- * 			Then sleeps for a specified period of time.
-*/
-
-static void	philo_sleep(t_philo *philo)
-{
-	print_msg("is sleeping", philo);
-	sleep_ms(philo->time_to_sleep);
-}
 
 /**
  * @brief	Prints "is thinking" on the terminal at the specified timestamp
 */
-
 static void	philo_think(t_philo *philo)
 {
 	print_msg("is thinking", philo);
+}
+
+/**
+ * @brief	Prints "is sleeping" on the terminal at the specified timestamp.
+ * 			Then sleeps for a specified period of time.
+*/
+static void	philo_sleep(t_philo *philo)
+{
+	print_msg("is sleeping", philo);
+	sleep_ms(philo->time_to_sleep);
 }
 
 /**
@@ -86,7 +83,6 @@ static void	philo_think(t_philo *philo)
  * 			TRUE, philosophers will alternate between eating, sleeping and
  * 			thinking states.
 */
-
 void	*philo_routine(void *arg)
 {
 	t_philo	*philo;

@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 18:47:20 by qtay              #+#    #+#             */
-/*   Updated: 2024/09/04 18:13:12 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:36:54 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * 			continuing. It also ensures resources used by the threads will be
  * 			properly cleaned up.
 */
-
 int	dinner_table(t_data *data)
 {
 	int			i;

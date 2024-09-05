@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 17:05:11 by qtay              #+#    #+#             */
-/*   Updated: 2024/07/07 17:26:29 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:37:03 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * @brief	This function initialises elements of the t_data struct that was
  * 			declared earlier (mutex init and malloc).
 */
-
 int	init_data(t_data *data, char **av)
 {
 	data->start_time = get_time_ms();
@@ -40,7 +39,6 @@ int	init_data(t_data *data, char **av)
  * @brief	This function initialises the forks (mutexes) contained in the
  * 			t_data struct.
 */
-
 int	init_forks(t_data *data, char **av)
 {
 	int	i;
@@ -58,7 +56,6 @@ int	init_forks(t_data *data, char **av)
  * @brief	This function initialises the t_philo struct which represents
  * 			each individual philosopher.
 */
-
 void	init_philos(t_data *data, char **av)
 {
 	int		i;

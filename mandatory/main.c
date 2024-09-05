@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 16:57:15 by qtay              #+#    #+#             */
-/*   Updated: 2024/07/07 17:24:15 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 16:37:08 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
  * @brief	Checks if all command line arguments are positive numbers.
  * 			It utilises a modified ft_atol function to do this.
 */
-
 static int	all_positive_nums(char **av)
 {
 	int		i;
@@ -38,7 +37,6 @@ static int	all_positive_nums(char **av)
  * 			the simulation. When the simulation ends, all mutexes are
  * 			destroyed and all heap memory is freed.
 */
-
 int	main(int ac, char **av)
 {
 	t_data	data;
