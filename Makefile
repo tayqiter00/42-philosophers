@@ -15,7 +15,7 @@ OBJ         = $(patsubst mandatory/%.c, $(PATH_OBJS)/%.o, $(SRC))
 B_OBJ       = $(patsubst bonus/%.c, $(PATH_OBJS)/%.o, $(B_SRC))
 
 CC          = cc
-FLAGS       = -Wall -Wextra -Werror -fsanitize=thread
+FLAGS       = -Wall -Wextra -Werror #-fsanitize=thread
 
 RM          = rm -rf
 

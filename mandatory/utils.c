@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 16:59:05 by qtay              #+#    #+#             */
-/*   Updated: 2024/09/04 18:15:45 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 13:41:04 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ long	ft_atol(char *str)
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-    		sign = -1;
+			sign = -1;
 		i++;
 	}
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
-    	result = (result * 10) + (str[i++] - '0');
+		result = (result * 10) + (str[i++] - '0');
 	if (str[i])
 		return (0);
 	return (sign * result);

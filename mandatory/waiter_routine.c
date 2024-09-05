@@ -6,7 +6,7 @@
 /*   By: qtay <qtay@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 18:51:30 by qtay              #+#    #+#             */
-/*   Updated: 2024/09/04 18:16:46 by qtay             ###   ########.fr       */
+/*   Updated: 2024/09/05 13:52:09 by qtay             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	check_death(t_philo	*philos)
 			return (TRUE);
 		}
 		pthread_mutex_unlock(&philos->data->meal_lock);
-		// usleep(10);
+		usleep(10);
 	}
 	return (FALSE);
 }
